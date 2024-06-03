@@ -1,0 +1,160 @@
+#contains-all {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.background-image {
+    background-image: url(background.jpg);
+    filter: brightness(.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1; 
+}
+
+.background-image::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+header {
+    box-sizing: border-box;
+    display: inline;
+    float: none;
+    line-height: normal;
+    position: static;
+    z-index: auto;
+    border-bottom: 0;
+}
+
+#login-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    padding: 30px 70px 150px 70px;
+    width: 300px;
+    margin-top: 35px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.75);
+    height: 540px;
+}
+
+label, h1 {
+    color: white;
+}
+
+#username, #password {
+    line-height: 3;
+    font-size: 1rem;
+    width: 93%;
+    background-color: inherit;
+    filter: opacity(100%);
+    color: white;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 5px;
+    padding-left: 17px;
+    border-width: 1px;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    font-weight: 300;
+}
+
+#username:focus, #password:focus {
+    border-color: rgba(128, 128, 128, 0.4);
+    border-style: solid;
+    outline-color: white;
+    outline-style: solid;
+}
+
+
+#sign-in-btn {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    width: 100%;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(229, 9, 20);
+    justify-content: center;
+    line-height: 3;
+    font-size: 1rem;
+    margin-top: 10px;
+   
+}
+
+#sign-in-code-btn {
+    background-color: rgba(128, 128, 128, 0.4);
+    color: white;
+    width: 100%;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    justify-content: center;
+    line-height: 3;
+    font-size: 1rem;
+    border-color: rgba(128, 128, 128, 0.4);
+   
+    
+}
+
+#or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    margin-bottom: 0;
+}
+
+#forgot-password {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#checkbox {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    border-color: gray;
+    padding-top: 20px;
+}
+
+#sign-up {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#learn-more {
+    text-decoration: none;
+
+}
+
+p {
+    color: lightgray;
+}
